@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node --env-file=.env server.js",
     "dev": "node --watch --env-file=.env server.js",
-    "test": "vitest",
+    "test": "node --env-file=.env node_modules/vitest/vitest.mjs",
     "test:database": "vitest database",
     "test:server": "vitest server",
     "db:schema": "psql -d fullstack_employees -f ./db/schema.sql",
